@@ -1,0 +1,40 @@
+{
+  "name": "vchepkov-puppetboard",
+  "version": "0.0.1",
+  "author": "Vadym Chepkov",
+  "summary": "Install and configure PuppetBoard",
+  "license": "Apache-2.0",
+  "source": "https://github.com/vchepkov/vchepkov-puppetboard.git",
+  "project_page": "https://github.com/vchepkov/vchepkov-puppetboard",
+  "issues_url": "https://github.com/vchepkov/vchepkov-puppetboard/issues",
+  "dependencies": [
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">= 6.0.0"
+    }
+  ],
+  "tags": [
+    "puppetboard",
+    "puppetdb"
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "8"
+      ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "8"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 6.0.0 < 7.0.0"
+    }
+  ]
+}

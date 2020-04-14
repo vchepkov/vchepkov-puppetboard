@@ -1,0 +1,6 @@
+<%- |
+  Hash $config = {},
+| -%>
+<% $config.keys.sort.each |$key| { -%>
+<%= $key %> = <%= $config[$key] %>
+<% } -%>
