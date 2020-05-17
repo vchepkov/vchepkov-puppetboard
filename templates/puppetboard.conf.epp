@@ -1,0 +1,14 @@
+<%- |
+  Stdlib::Unixpath $docroot,
+  String $user,
+  String $group,
+  Integer $threads,
+  Integer $maxreqs,
+| -%>
+WSGIDaemonProcess puppetboard user=<%= $user %> group=<%= $group %> threads=<%= $threads %> maximum-requests=<%= $maxreqs %> python-home=<%= "${docroot}/code" %>
+
+<Directory <%= $docroot -%>>
+    WSGIProcessGroup puppetboard
+    WSGIApplicationGroup %{GLOBAL}
+    Require all granted
+</Directory>

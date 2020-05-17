@@ -1,6 +1,9 @@
 # puppetboard instance
 define puppetboard (
   String $instance = $title,
+  String $host = 'localhost',
+  Integer $port = 8080,
+  String $default_environment = 'production',
   Hash $config = {},
 ) {
 
@@ -19,7 +22,10 @@ define puppetboard (
     group   => 'puppetboard',
     mode    => '0644',
     content => epp("${module_name}/settings.py.epp", {
-      config => $config,
+      host                => $host,
+      port                => $port,
+      default_environment => $default_environment,
+      config              => $config,
     }),
   }
 
@@ -30,7 +36,6 @@ define puppetboard (
     mode    => '0644',
     content => epp("${module_name}/wsgi.py.epp", {
       basedir => "${puppetboard::install::basedir}/${instance}",
-      codedir => $puppetboard::install::basedir,
     }),
   }
 }

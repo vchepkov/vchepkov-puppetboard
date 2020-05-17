@@ -1,6 +1,12 @@
 <%- |
-  Hash $config = {},
+  String $host,
+  Integer $port,
+  String $default_environment,
+  Hash $config,
 | -%>
+PUPPETDB_HOST = '<%= $host %>'
+PUPPETDB_PORT = <%= $port %>
+DEFAULT_ENVIRONMENT = '<%= $default_environment %>'
 <% $config.keys.sort.each |$key| { -%>
 <%= $key %> = <%= $config[$key] %>
 <% } -%>

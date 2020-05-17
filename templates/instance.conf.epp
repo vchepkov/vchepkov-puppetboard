@@ -1,0 +1,5 @@
+<%- |
+  String $instance,
+  String $alias,
+| -%>
+WSGIScriptAlias <%= $alias %> <%= "${puppetboard::install::basedir}/${instance}/wsgi.py" %>
