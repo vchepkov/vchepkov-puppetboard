@@ -36,12 +36,11 @@ class puppetboard::install (
   exec { 'create puppetboard virual environment':
     command => "${puppetboard::python::bin} -m venv --clear ${codedir} && ${codedir}/bin/pip3 install --upgrade pip && ${codedir}/bin/pip3 install --upgrade setuptools",
     creates => "${codedir}/bin/activate",
-    before  => Package['puppetboard'],
+    before  => Python::Pip['puppetboard'],
   }
 
-  package { 'puppetboard':
-    ensure   => $revision,
-    provider => 'pip3',
-    command  => "${codedir}/bin/pip3",
+  python::pip { 'puppetboard':
+    ensure     => $revision,
+    virtualenv => $codedir,
   }
 }
