@@ -8,6 +8,8 @@ class puppetboard::apache::config (
   require puppetboard::install
   include apache::mod::wsgi
 
+  Class['puppetboard::install'] ~> Class['apache::service']
+
   apache::custom_config { 'puppetboard':
     filename      => 'puppetboard.conf',
     content       => epp("${module_name}/puppetboard.conf", {
