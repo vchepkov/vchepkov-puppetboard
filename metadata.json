@@ -17,10 +17,6 @@
       "version_requirement": ">= 6.0.0 < 7.0.0"
     }
   ],
-  "tags": [
-    "puppetboard",
-    "puppetdb"
-  ],
   "operatingsystem_support": [
     {
       "operatingsystem": "RedHat",
@@ -40,5 +36,12 @@
       "name": "puppet",
       "version_requirement": ">= 6.0.0 < 7.0.0"
     }
-  ]
+  ],
+  "tags": [
+    "puppetboard",
+    "puppetdb"
+  ],
+  "pdk-version": "1.18.1",
+  "template-url": "pdk-default#1.18.1",
+  "template-ref": "tags/1.18.1-0-g3d2e75c"
 }
