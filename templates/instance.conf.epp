@@ -1,5 +1,5 @@
 <%- |
   String $instance,
-  String $alias,
+  String $url_path,
 | -%>
-WSGIScriptAlias <%= $alias %> <%= "${puppetboard::install::basedir}/${instance}/wsgi.py" %>
+WSGIScriptAlias <%= $url_path %> <%= "${puppetboard::install::basedir}/${instance}/wsgi.py" %>

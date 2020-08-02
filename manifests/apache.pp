@@ -1,7 +1,7 @@
 # Puppetboard apache config
 define puppetboard::apache (
   String $instance = $title,
-  String $alias = "/puppetboad/${instance}",
+  String $url_path = "/puppetboad/${instance}",
 ) {
 
   require puppetboard::install
@@ -11,7 +11,7 @@ define puppetboard::apache (
     filename      => "puppetboard-${instance}.conf",
     content       => epp("${module_name}/instance.conf.epp", {
       instance => $instance,
-      alias    => $alias,
+      url_path => $url_path,
     }),
     verify_config => false,
   }
