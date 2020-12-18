@@ -1,6 +1,6 @@
 {
   "name": "vchepkov-puppetboard",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "author": "Vadym Chepkov",
   "summary": "Install and configure PuppetBoard",
   "license": "Apache-2.0",
@@ -26,6 +26,12 @@
     },
     {
       "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "8"
+      ]
+    },
+    {
+      "operatingsystem": "OracleLinux",
       "operatingsystemrelease": [
         "8"
       ]
