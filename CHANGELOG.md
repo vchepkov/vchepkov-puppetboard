@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.3.4
+
+- allow puppet 7 and puppet/python 6
+- update to pdk 2
+
 ## 0.3.3
 
 - update puppetboard to v3.0.0
