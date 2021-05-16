@@ -1,6 +1,6 @@
 # install puppetboard
 class puppetboard::install (
-  String[1] $revision = '3.0.0',
+  String[1] $revision = '3.1.0',
   String[1] $user  = 'puppetboard',
   String[1] $group = 'puppetboard',
   Stdlib::Unixpath $basedir = '/opt/puppetboard',
@@ -34,7 +34,7 @@ class puppetboard::install (
   require puppetboard::python
 
   exec { 'create puppetboard virual environment':
-    command => "${puppetboard::python::bin} -m venv --clear ${codedir} && ${codedir}/bin/pip3 install --upgrade pip && ${codedir}/bin/pip3 install --upgrade setuptools",
+    command => "${puppetboard::python::bin} -m venv --clear ${codedir} && ${codedir}/bin/pip3 install --upgrade pip && ${codedir}/bin/pip3 install --upgrade setuptools", # lint:ignore:140chars
     creates => "${codedir}/bin/activate",
     before  => Python::Pip['puppetboard'],
   }

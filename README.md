@@ -30,3 +30,13 @@ Install puppetboard
     url_path => '/puppetboard',
   }
 ```
+
+### To use python 3.8 the following attributes can be used
+```
+apache::mod::wsgi::mod_path: 'modules/mod_wsgi_python3.so'
+apache::mod::wsgi::package_name: 'python38-mod_wsgi'
+
+puppetboard::python::bin: '/bin/python3.8'
+puppetboard::python::python_module: 'python38'
+
+```

@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.3.5
+- update puppetboard to v3.1.0
+- add AlmaLinux support
+
 ## 0.3.4
 
 - allow puppet 7 and puppet/python 6
