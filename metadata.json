@@ -1,6 +1,6 @@
 {
   "name": "vchepkov-puppetboard",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "author": "Vadym Chepkov",
   "summary": "Install and configure PuppetBoard",
   "license": "Apache-2.0",
@@ -59,7 +59,7 @@
     "puppetboard",
     "puppetdb"
   ],
-  "pdk-version": "2.1.0",
-  "template-url": "pdk-default#2.1.0",
-  "template-ref": "tags/2.1.0-0-ga675ea5"
+  "pdk-version": "2.1.1",
+  "template-url": "pdk-default#2.1.1",
+  "template-ref": "tags/2.1.1-0-g03daa92"
 }
