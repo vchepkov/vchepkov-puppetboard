@@ -1,6 +1,6 @@
 {
   "name": "vchepkov-puppetboard",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "author": "Vadym Chepkov",
   "summary": "Install and configure PuppetBoard",
   "license": "Apache-2.0",
@@ -14,7 +14,7 @@
     },
     {
       "name": "puppetlabs/stdlib",
-      "version_requirement": ">= 6.0.0 < 8.0.0"
+      "version_requirement": ">= 6.0.0 < 9.0.0"
     }
   ],
   "operatingsystem_support": [
@@ -59,7 +59,7 @@
     "puppetboard",
     "puppetdb"
   ],
-  "pdk-version": "2.1.1",
-  "template-url": "pdk-default#2.1.1",
-  "template-ref": "tags/2.1.1-0-g03daa92"
+  "pdk-version": "2.2.0",
+  "template-url": "pdk-default#2.2.0",
+  "template-ref": "tags/2.2.0-0-g2381db6"
 }

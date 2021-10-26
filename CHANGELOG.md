@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.3.7
+- update puppetboard to v3.2.0
+
 ## 0.3.6
 - add Rocky Linux support
 
