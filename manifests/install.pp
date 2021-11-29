@@ -5,7 +5,6 @@ class puppetboard::install (
   String[1] $group = 'puppetboard',
   Stdlib::Unixpath $basedir = '/opt/puppetboard',
 ) {
-
   group { 'puppetboard':
     ensure => present,
     name   => $group,

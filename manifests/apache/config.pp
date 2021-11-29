@@ -4,7 +4,6 @@ class puppetboard::apache::config (
   Integer $threads = 4,
   Integer $maxreqs = 0,
 ) {
-
   require puppetboard::install
   include apache::mod::wsgi
 
@@ -13,11 +12,11 @@ class puppetboard::apache::config (
   apache::custom_config { 'puppetboard':
     filename      => 'puppetboard.conf',
     content       => epp("${module_name}/puppetboard.conf", {
-      docroot => $puppetboard::install::basedir,
-      user    => $puppetboard::install::user,
-      group   => $puppetboard::install::group,
-      threads => $threads,
-      maxreqs => $maxreqs,
+        docroot => $puppetboard::install::basedir,
+        user    => $puppetboard::install::user,
+        group   => $puppetboard::install::group,
+        threads => $threads,
+        maxreqs => $maxreqs,
     }),
     verify_config => false,
   }

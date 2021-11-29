@@ -6,7 +6,6 @@ define puppetboard (
   String $default_environment = 'production',
   Hash $config = {},
 ) {
-
   require puppetboard::install
 
   file { "${puppetboard::install::basedir}/${instance}":
@@ -22,10 +21,10 @@ define puppetboard (
     group   => 'puppetboard',
     mode    => '0644',
     content => epp("${module_name}/settings.py.epp", {
-      host                => $host,
-      port                => $port,
-      default_environment => $default_environment,
-      config              => $config,
+        host                => $host,
+        port                => $port,
+        default_environment => $default_environment,
+        config              => $config,
     }),
   }
 
@@ -35,7 +34,7 @@ define puppetboard (
     group   => 'puppetboard',
     mode    => '0644',
     content => epp("${module_name}/wsgi.py.epp", {
-      basedir => "${puppetboard::install::basedir}/${instance}",
+        basedir => "${puppetboard::install::basedir}/${instance}",
     }),
   }
 }
