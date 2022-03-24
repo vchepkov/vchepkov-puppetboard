@@ -38,5 +38,4 @@ apache::mod::wsgi::package_name: 'python38-mod_wsgi'
 
 puppetboard::python::bin: '/bin/python3.8'
 puppetboard::python::python_module: 'python38'
-
 ```
