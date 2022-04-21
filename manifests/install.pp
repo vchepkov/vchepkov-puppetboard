@@ -1,6 +1,6 @@
 # install puppetboard
 class puppetboard::install (
-  String[1] $revision = '3.4.1',
+  String[1] $revision = '3.4.2',
   String[1] $user  = 'puppetboard',
   String[1] $group = 'puppetboard',
   Stdlib::Unixpath $basedir = '/opt/puppetboard',
