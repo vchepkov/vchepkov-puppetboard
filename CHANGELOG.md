@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.4.0
+- remove CentOS 8
+- update puppetboard to v3.4.2
+
 ## 0.3.9
 - update puppetboard to v3.4.1
 
