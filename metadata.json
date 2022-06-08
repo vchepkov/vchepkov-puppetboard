@@ -1,6 +1,6 @@
 {
   "name": "vchepkov-puppetboard",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "author": "Vadym Chepkov",
   "summary": "Install and configure PuppetBoard",
   "license": "Apache-2.0",
