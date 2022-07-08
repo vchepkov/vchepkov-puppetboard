@@ -3,9 +3,15 @@ class puppetboard::apache::config (
   Boolean $manage_selinux = true,
   Integer $threads = 4,
   Integer $maxreqs = 0,
+  String $wsgi_mod_path = 'modules/mod_wsgi_python3.so',
+  String $wsgi_package_name = 'python38-mod_wsgi',
 ) {
   require puppetboard::install
-  include apache::mod::wsgi
+
+  class { 'apache::mod::wsgi':
+    mod_path     => $wsgi_mod_path,
+    package_name => $wsgi_package_name,
+  }
 
   Class['puppetboard::install'] ~> Class['apache::service']
 

@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.0.0
+- switch to python 3.8
+- update puppetboard to v4.0.2
+
 ## 0.4.3
 - update puppetboard to v3.6.1
 
