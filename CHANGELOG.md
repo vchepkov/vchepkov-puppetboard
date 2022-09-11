@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.0.2
+- update puppetboard to v4.0.5
+- allow puppetlabs/apache v8
+
 ## 1.0.1
 - update puppetboard to v4.0.3
 
