@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.1.5
+- update puppetboard to v4.3.0
+
 ## 1.1.4
 - update puppetboard to v4.2.6
 
