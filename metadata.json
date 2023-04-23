@@ -1,6 +1,6 @@
 {
   "name": "vchepkov-puppetboard",
-  "version": "1.1.5",
+  "version": "2.0.0",
   "author": "Vadym Chepkov",
   "summary": "Install and configure PuppetBoard",
   "license": "Apache-2.0",
@@ -10,15 +10,15 @@
   "dependencies": [
     {
       "name": "puppet/python",
-      "version_requirement": ">= 4.1.0 < 7.0.0"
+      "version_requirement": ">= 6.0.0 < 7.0.0"
     },
     {
       "name": "puppetlabs/apache",
-      "version_requirement": ">= 6.0.0 < 10.0.0"
+      "version_requirement": ">= 8.0.0 < 11.0.0"
     },
     {
       "name": "puppetlabs/stdlib",
-      "version_requirement": ">= 6.0.0 < 9.0.0"
+      "version_requirement": ">= 7.0.0 < 9.0.0"
     }
   ],
   "operatingsystem_support": [
@@ -50,7 +50,7 @@
   "requirements": [
     {
       "name": "puppet",
-      "version_requirement": ">= 6.0.0 < 8.0.0"
+      "version_requirement": ">= 7.0.0 < 8.0.0"
     }
   ],
   "tags": [

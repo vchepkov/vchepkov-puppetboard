@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2.0.0
+- remove support of puppet 6
+
 ## 1.1.5
 - update puppetboard to v4.3.0
 
