@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2.0.1
+- allow puppetlabs/stdlib v9
+
 ## 2.0.0
 - remove support of puppet 6
 
