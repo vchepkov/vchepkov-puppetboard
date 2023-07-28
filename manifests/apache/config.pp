@@ -1,10 +1,10 @@
 # Basic apache configuration for Puppetboard
 class puppetboard::apache::config (
+  String $wsgi_mod_path,
+  String $wsgi_package_name,
   Boolean $manage_selinux = true,
   Integer $threads = 4,
   Integer $maxreqs = 0,
-  String $wsgi_mod_path = 'modules/mod_wsgi_python3.so',
-  String $wsgi_package_name = 'python38-mod_wsgi',
 ) {
   require puppetboard::install
 

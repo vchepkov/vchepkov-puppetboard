@@ -7,6 +7,7 @@
 PUPPETDB_HOST = '<%= $host %>'
 PUPPETDB_PORT = <%= $port %>
 DEFAULT_ENVIRONMENT = '<%= $default_environment %>'
+SECRET_KEY = '<%= fqdn_rand_string(32) %>'
 <% $config.keys.sort.each |$key| { -%>
 <%= $key %> = <%= $config[$key] %>
 <% } -%>

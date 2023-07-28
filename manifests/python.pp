@@ -1,8 +1,8 @@
 # Class to manage python package
 class puppetboard::python (
-  String $python_module = 'python38',
+  String $python_module,
+  Stdlib::Unixpath $bin,
   Boolean $manage = true,
-  Stdlib::Unixpath $bin = '/bin/python3.8',
 ) {
   if $manage {
     package { 'python module':

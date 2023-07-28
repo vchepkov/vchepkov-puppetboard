@@ -19,13 +19,13 @@ define puppetboard (
     ensure  => file,
     owner   => 'puppetboard',
     group   => 'puppetboard',
-    mode    => '0644',
-    content => epp("${module_name}/settings.py.epp", {
-        host                => $host,
-        port                => $port,
-        default_environment => $default_environment,
-        config              => $config,
-    }),
+    mode    => '0640',
+    content => Sensitive(epp("${module_name}/settings.py.epp", {
+          host                => $host,
+          port                => $port,
+          default_environment => $default_environment,
+          config              => $config,
+    })),
   }
 
   file { "${puppetboard::install::basedir}/${instance}/wsgi.py":

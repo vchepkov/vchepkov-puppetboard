@@ -1,0 +1,6 @@
+---
+puppetboard::apache::config::wsgi_mod_path: modules/mod_wsgi_python3.so
+puppetboard::apache::config::wsgi_package_name: python38-mod_wsgi
+
+puppetboard::python::python_module: python38
+puppetboard::python::bin: /bin/python3.8
