@@ -6,4 +6,3 @@ defaults:
 hierarchy:
   - name: 'Common'
     path: common.yaml
-
