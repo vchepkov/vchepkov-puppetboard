@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 3.0.1
+- switch to puppetlabs/stdlib v9+
+- re-add puppet 6.24 to metadata as forge requirement for score quality
+
 ## 3.0.0
 - update puppetboard to v5.0.0
 
