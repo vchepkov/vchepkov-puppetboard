@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
+## 3.1.1
+- allow puppetlabs/apache v11
+
 ## 3.1.0
 - add support for el9
 
