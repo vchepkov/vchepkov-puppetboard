@@ -4,5 +4,7 @@ defaults:
   datadir: 'data'
   data_hash: 'yaml_data'
 hierarchy:
+  - name: 'OS family'
+    path: "%{facts.os.family}-%{facts.os.release.major}.yaml"
   - name: 'Common'
     path: common.yaml

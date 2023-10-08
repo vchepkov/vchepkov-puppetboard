@@ -1,0 +1,5 @@
+---
+puppetboard::apache::config::wsgi_package_name: python3-mod_wsgi
+
+puppetboard::python::bin: /bin/python3.9
+puppetboard::python::pip_package: python3-pip
