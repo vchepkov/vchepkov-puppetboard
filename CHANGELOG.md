@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
+## 3.2.1
+- allow puppetlabs/apache v12
+
 ## 3.2.0
 - update puppetboard to v5.1.0
 
