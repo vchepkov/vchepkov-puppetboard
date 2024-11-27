@@ -32,5 +32,5 @@ Install puppetboard
 ```
 
 ## Python requirements
-voxpupuli/puppetboard v5+ requires python v3.8 and above
+voxpupuli/puppetboard v6+ requires python v3.9 and above
 if you use apache wsgi as a webserver, python variables should be adjusted accordingly
