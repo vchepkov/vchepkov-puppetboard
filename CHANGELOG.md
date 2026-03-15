@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## 5.0.0
+- update puppetboard to v7.0.1
+- switch to openvox
+- add support for el10
+
 ## 4.0.0
 - update puppetboard to v6.0.1
 - switch to python 3.9 on el8
