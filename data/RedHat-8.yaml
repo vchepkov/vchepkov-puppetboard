@@ -1,6 +1,5 @@
 ---
-puppetboard::apache::config::wsgi_package_name: python39-mod_wsgi
+puppetboard::apache::config::wsgi_package_name: python3.12-mod_wsgi
 
-puppetboard::python::bin: /bin/python3.9
-puppetboard::python::pip_package: python39-pip
-puppetboard::python::python_module: python39
+puppetboard::python::bin: /bin/python3.12
+puppetboard::python::pip_package: python3.12-pip

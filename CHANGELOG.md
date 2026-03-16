@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
+## 5.1.0
+- update python to v3.12
+
 ## 5.0.0
 - update puppetboard to v7.0.1
 - switch to openvox
