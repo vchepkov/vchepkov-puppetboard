@@ -1,6 +1,8 @@
 # Changelog
 
 All notable changes to this project will be documented in this file.
+## 5.1.1
+- update puppetboard to v7.0.2
 
 ## 5.1.0
 - update python to v3.12
