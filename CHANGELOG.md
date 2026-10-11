@@ -1,6 +1,11 @@
 # Changelog
 
 All notable changes to this project will be documented in this file.
+## 8.0.0
+- update puppetboard to v8.0.0 (requires python 3.12+)
+- update pdk to v4.0.1
+- allow puppet/python 10.x and puppetlabs/stdlib 10.x
+
 ## 5.1.1
 - update puppetboard to v7.0.2
 
